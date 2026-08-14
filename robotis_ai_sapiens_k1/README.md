@@ -12,13 +12,14 @@ See [CHANGELOG.md](./CHANGELOG.md) for a full history of changes.
 This package contains a simplified robot description (MJCF) of the
 [ROBOTIS AI Sapiens K1](https://docs.robotis.com/docs/systems/aisapiens/introduction/)
 humanoid robot developed by [ROBOTIS](https://www.robotis.com/). It is derived
-from the K1 URDF in the `ai_sapiens_description` package.
+from the K1 URDF in the `ai_sapiens_description` package of the
+[ai_sapiens](https://github.com/ROBOTIS-GIT/ai_sapiens) repository.
 
 <p float="left">
   <img src="k1.png" width="400">
 </p>
 
-## MJCF derivation steps
+## URDF → MJCF derivation steps
 
 1. Started from the K1 URDF in the `ai_sapiens_description` package.
 2. Added a `<mujoco>` compiler directive with `discardvisual="false"` to the URDF and resolved the ROS package mesh paths.
